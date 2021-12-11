@@ -1,0 +1,42 @@
+html, body {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px; 
+    font-family: Helvetica;
+}
+
+
+.title {
+    background-image: url("../../image/falcon9/falcon9.webp");
+    background-size: cover;
+    background-position-x: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    text-align: center;
+}
+
+.detail {
+    height: 135vh;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+}
+
+.numbers {
+    height: 25%;
+    background-color: blueviolet;
+}
+
+.model-container{
+    height: 75%;
+    width: 100%;
+    background-image: url("../../image/falcon9/rocket_model.webp");
+    background-size: cover;
+    background-position-x: 60%;
+    background-repeat: no-repeat;
+}
