@@ -10,7 +10,7 @@ html, body {
 .title {
     background-image: url("../../image/falcon9/falcon9.webp");
     background-size: cover;
-    background-position-x: 60%;
+    background-position-x: 50%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -24,13 +24,32 @@ html, body {
     height: 135vh;
     background-color: orange;
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
 .numbers {
     height: 25%;
+    width: 70%;
     background-color: blueviolet;
+    display: flex;
+    justify-content: space-around;
+    justify-self: center;
 }
+
+.number{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 5vw;
+}
+
+.fsize-2{
+    margin-top: -20%;
+    font-size: 2vw;
+}
+
 
 .model-container{
     height: 75%;
@@ -40,3 +59,4 @@ html, body {
     background-position-x: 60%;
     background-repeat: no-repeat;
 }
+
