@@ -214,3 +214,12 @@
     height: 100%;
 }
 
+.table table {
+    height: 100%;
+    width: 100%;
+}
+
+.table tr {
+    border-bottom: solid 2px white;
+}
+
