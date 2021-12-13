@@ -219,7 +219,7 @@
     width: 100%;
 }
 
-.table tr {
-    border-bottom: solid 2px white;
+.table td{
+    border-bottom: solid 1px white;
 }
 

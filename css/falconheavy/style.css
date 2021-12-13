@@ -8,7 +8,7 @@ html, body {
 
 
 .title {
-    background-image: url("../../image/falcon9/falcon9.webp");
+    background-image: url("../../image/falconheavy/heavy.webp");
     background-size: cover;
     background-position-x: 50%;
     height: 100vh;
@@ -38,28 +38,21 @@ html, body {
 }
 
 .numbers {
-    background-color: hsla(0, 0, 0, 0);
+    background-color: black;
     display: flex;
+    align-items: center;
     text-align: center;
-    color: white;
-}
-
-.number{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    width: 33%;
-    font-size: xx-large;
-}
-
-.number-desc {
-    font-size: medium;
-    margin-top: -20%;
+    justify-content: space-around;
+    font-weight: 400;
+    font-style: normal;
+    font: 60px/60px D-DIN-Light,Arial,Verdana,sans-serif;
+    color:white;
 }
 
 .detail {
     width: 100%;
-    background-image: url("../../image/falcon9/rocket_model.webp");
+    background-image: url("../../image/falconheavy/rocket2.webp");
     background-size: cover;
     background-repeat: space;
     background-position-x: 60%;
@@ -72,11 +65,10 @@ html, body {
 .d-info {
     background-color: hsla(0, 0, 0, 0);
     color: rgb(225, 225, 225);
-    text-align: left;
 }
 
-.right-align{
-    text-align: right;
+.left-alight {
+    text-align: left;
 }
 
 .empty {
@@ -91,21 +83,17 @@ html, body {
     }
 
     .numbers{
-        height: 13.33%;
+        height: 16.66%;
         width: 90%;
     }
 
-    .number {
-        font-size: 4vh;
-    }
-
     .detail {
-        height: 53.33%;
+        height: 50%;
     }
 
     .d-info {
         margin-bottom: -125vh;
-        height: 62.5%;
+        height: 66.66%;
         width: 100%;
     }
 
@@ -122,10 +110,6 @@ html, body {
     .numbers {
         height: 25%;
         width: 75%;
-    }
-
-    .number {
-        font-size: 10vh;
     }
 
     .detail {
