@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SpaceX</title>
+        <link rel="stylesheet" href="css/MainPage/style.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body onscroll="check()" style="background-color: black;">
+        <div class="main_div" id="div1">
+            <div class="in_main" id="in_main_div1">
+                <div class="text rec">
+                    RECENT LAUNCH
+                </div>
+                <div class="text title">
+                    IMAGING X-RAY POLARIMETRY EXPLORER (IXPE) MISSION
+                </div>
+                <button type="button" class="btn btn-default" style="height: 50px; width: 130px;">RE-WATCH</button>
+            </div>
+            <div id="div_icon">
+                <img src="image/index/icons8-expand-arrow-90.png" alt="" height="10%">
+            </div>
+        </div>
+        <div class="main_div" id="div2">
+            <div class="in_main" data-class-in="" data-class-out="out-animation">
+                <div class="text rec">
+                    <i>RECENT LAUNCH</i>
+                </div>
+                <div class="text title">
+                    DOUBLE ASTEROID REDIRECTION TEST(DART) MISSION
+                </div>
+                <button type="button" class="btn btn-default" style="height: 50px; width: 130px;">RE-WATCH</button>
+            </div>
+        </div>
+        <div class="main_div" id="div3">
+            <div class="in_main">
+                <div class="text rec">
+                    <i>RECENT LAUNCH</i>
+                </div>
+                <div class="text title">
+                    STARLINK MISSION
+                </div>
+                <button type="button" class="btn btn-default" style="height: 50px; width: 130px;">RE-WATCH</button>
+            </div>
+        </div>
+        <div class="main_div" id="div4">
+            <div class="in_main">
+                <div class="text rec">
+                    <i>CURRENT MISSION</i>
+                </div>
+                <div class="text title">
+                    CREW-3 DOCKS TO THE INTERNATIONAL SPACE STATION
+                </div>
+                <button type="button" class="btn btn-default" style="height: 50px; width: 130px;">RE-WATCH</button>
+            </div>
+        </div>
+        <div class="main_div" id="div5">
+            <div class="in_main">
+                <div class="text title">
+                    STARSHIP TO LAND NASA ASTRONAUTS ON THE MOON
+                </div>
+                <button type="button" class="btn btn-default" style="height: 50px; width: 130px;">LEARN MORE</button>
+            </div>
+        </div>
+        <script>
+            function check(){
+                const window_height = window.innerHeight;
+                const window_top_position = window.scrollY;
+                const window_bottom_position = window_top_position + window_height;
+                const elements = document.getElementsByClassName("in_main");
+                for(let i = 0; i < elements.length; i++){
+                    const element_height = elements[i].offsetHeight;
+                    const element_top_position = elements[i].offsetTop;
+                    const element_bottom_position = element_top_position + element_height;
+                    if(element_top_position <= window_bottom_position && element_bottom_position >= window_top_position){
+                        elements[i].style.animation ="main_div_animate 4s "
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

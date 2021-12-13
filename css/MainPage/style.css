@@ -1,0 +1,105 @@
+
+.main_div{
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.out-animation{
+    opacity: 0;
+    -webkit-transform: translateX(80px);
+    -moz-transform: translateX(80px);
+    transform: translateX(80px);
+}
+@keyframes div1_animate {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes main_div_animate {
+    from{
+        top: -20vh;
+        opacity: 0;
+    }
+    to{
+        top: 0%;
+        opacity: 1;
+    }
+}
+#in_main_div1{
+    animation: main_div_animate 4s;
+}
+#div1{
+    animation: div1_animate 4s;
+    background-image: url(../../image/index/launch.webp);
+    background-color: hsl(0, 0, 0);
+    background-position-x: 70%;
+}
+#div2{
+    background-image: url(../../image/index/DART_MAINPAGE_DESKTOP.webp);
+}
+#div3{
+    background-image: url(../../image/index/Starlink4-3_desktop_homepage.webp);
+}
+#div4{
+    background-image: url(../../image/index/Homepage_Crew3_outside_Desktop.webp);
+}
+#div5{
+    background-image: url(../../image/index/hls-resized-2.webp);
+    background-position-x:  70%;
+}
+.text{
+    color: #ffffff;
+    font-family: D-DIN-Bold,Arial,Verdana,sans-serif;
+}
+.in_main{
+    overflow: hidden;
+    height: 90%;
+    position: relative;
+    left: 10vh;
+    max-width: 520px;
+}
+.title{
+    position: relative;
+    top: 50vh;
+    font-weight: bold;
+    font-size: 3vmin;
+}
+button{
+    position: relative;
+    top: 55vh;
+}
+.rec{
+    position: relative;
+    top: 50vh;
+    font-weight: 400;
+
+}
+#div_icon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+@media (max-width: 1000px) {
+    .in_main{
+        max-width: 420px;
+    }
+}
+@keyframes scroll_animate {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+img{
+    animation: scroll_animate 2s infinite;
+}
