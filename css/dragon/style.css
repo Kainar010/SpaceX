@@ -5,6 +5,7 @@ html, body {
     margin-bottom: 0px; 
     font-family: Helvetica;
     color: white;
+    background-color: black;
 }
 
 
@@ -35,10 +36,9 @@ html, body {
     background-image: url("../../image/dragon/dragon_humans.webp");
     background-size: cover;
     background-repeat: space;
-    background-position-x: 40%;
+    background-position-x: 33.33%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     justify-content: center;
 }
 
@@ -49,21 +49,65 @@ html, body {
     flex-direction: column;
     align-items:center;
     justify-content: space-around;
-    color: rgba(235, 225, 225,1);
+    text-align: center;
 }
 .surak{
     display:flex;
     flex-direction: row;
     align-items:center ;
-    
+    justify-content: center;
 }
-.radio1{
-    color:white;
+
+.surak2 {
     width: 40%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+.radio1{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:1025px){
+    .detail-container {
+        align-items: center;
+    }
+
+    .takryp {
+        position: absolute;
+        top: 90vh;
+    }
+
+    .detail {
+        margin-bottom: -150vh;
+        width: 90%;
+    }
+
+    .surak {
+        width: 90%;
+    }
+
+    .surak2 {
+        width: 90%;
+    }
+
+    .radio1{
+        width: 90%;
+        margin-bottom: 10%;
+    }
+}
+
+
+@media screen and (min-width: 1025px){
+    .detail-container {
+        align-items: flex-end;
+    }
+}
+
+
     
 
 
