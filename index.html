@@ -2,13 +2,17 @@
 <html>
     <head>
         <title>SpaceX</title>
+        <link rel="stylesheet" href="css/navigation.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/MainPage/style.css">
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body onscroll="check()" style="background-color: black;">
+        <div id="demo">
+            <navigation></navigation>
+        </div>
         <div class="main_div" id="div1">
             <div class="in_main" id="in_main_div1">
                 <div class="text rec">
@@ -32,9 +36,9 @@
                     DOUBLE ASTEROID REDIRECTION TEST(DART) MISSION
                 </div>
                 <button type="button" class="btn btn-default" style="height: 50px; width: 130px;">RE-WATCH</button>
-            </div>
+            </div>  
             <div class="div_icon">
-                <img src="image/index/icons8-expand-arrow-90.png" alt="" height="50px">
+                <img class="arrow_down" src="image/index/icons8-expand-arrow-90.png" alt="" height="50px">
             </div>
         </div>
         <div class="main_div" id="div3">
@@ -48,7 +52,7 @@
                 <button type="button" class="btn btn-default" style="height: 50px; width: 130px;">RE-WATCH</button>
             </div>
             <div class="div_icon">
-                <img src="image/index/icons8-expand-arrow-90.png" alt="" height="50px">
+                <img class="arrow_down" src="image/index/icons8-expand-arrow-90.png" alt="" height="50px">
             </div>
         </div>
         <div class="main_div" id="div4">
@@ -62,7 +66,7 @@
                 <button type="button" class="btn btn-default" style="height: 50px; width: 130px;">RE-WATCH</button>
             </div>
             <div class="div_icon">
-                <img src="image/index/icons8-expand-arrow-90.png" alt="" height="50px">
+                <img class="arrow_down" src="image/index/icons8-expand-arrow-90.png" alt="" height="50px">
             </div>
         </div>
         <div class="main_div" id="div5">
@@ -73,6 +77,8 @@
                 <button type="button" class="btn btn-default" style="height: 50px; width: 130px;">LEARN MORE</button>
             </div>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+        <script src="javascript/navigation.js"></script>
         <script>
             function check(){
                 const window_height = window.innerHeight;
