@@ -24,8 +24,6 @@ body {
     border-sizing: border-box;
     font-family: 'D-DIN', Arial, Verdana, sans-serif;
     line-height: 1.4;
-
-    background-color: blue;
 }
 
 a {
@@ -51,6 +49,7 @@ a {
     align-items: baseline;
 
     transition: .5s;
+    z-index: 10;
 }
 
 .hide {
