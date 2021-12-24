@@ -32,9 +32,12 @@
                     <option value="3">POLAR</option>
                 </select>
                 <input class="pb-block" type="date" title="DESIRED ORBIT">
-                <input class="pb-block" type="number">
-                <input class="pb-block" type="text" readonly="readonly">
-            </div> 
+                <input class="pb-block" type="number" v-model="mass">
+                <input class="pb-block" type="text" v-bind:value="price" readonly="readonly">
+            </div>
+            <div class="button-bar">
+                <button v-on:click="calculate">Calculate</button>
+            </div>
         </div>
     </div>
     <script src="javascript/rideshare/main.js"></script>

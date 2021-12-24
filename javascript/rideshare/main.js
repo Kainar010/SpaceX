@@ -5,13 +5,13 @@ Vue.component('navigation', {
         <div class="header">
             <div class="wrapper">
                 <div>
-                    <a href=""><img class="logo" src="./image/navigation/SpaceX-Logo.svg"></img>
+                    <a href="#"><img class="logo" src="./image/navigation/SpaceX-Logo.svg"></img>
                 </div>
                 <div class="items">
-                    <a href="" v-for="nav in navs" class="item-text capital hover">{{ nav.item }}</a>
+                    <a href="#" v-for="nav in navs" class="item-text capital hover">{{ nav.item }}</a>
                 </div>
                 <div class="sign-up">
-                    <a href="" class="button_sign-up capital hover">sign up</a>
+                    <a href="#" class="button_sign-up capital hover">sign up</a>
                 </div>
             </div>
         </div>
@@ -35,12 +35,14 @@ Vue.component('navigation', {
 new Vue({
     el: '#main',
     data: {
-        mass: 0,
-        price: 0
+        mass: "",
+        price: 0+"$"
     },
-    method: {
+    methods: {
         calculate: function(){
-            this.price = this.mass * 11.28;
+            this.price = this.mass * 3000;
+            this.price += "$";
+            console.log("Fuck you!!!");
         }
     }
 });
