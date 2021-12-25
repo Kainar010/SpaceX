@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/rideshare/style.css">
     <script src="javascript/vue.js"></script>
     <title>Ride Share</title>
@@ -17,7 +18,7 @@
         <div class="main-content">
             <div class="title">
                 <h1>
-                    SMALLSAT<br>
+                    SMALLESAT<br>
                     RIDESHARE PROGRAM
                 </h1>
                 <p>
@@ -26,14 +27,14 @@
             </div>
 
             <div class="price-bar">
-                <select class="pb-block" name="Who care?">
+                <select class="pb-block col-lg-2 col-sm-10" name="Who care?">
                     <option value="1">SSO</option>
                     <option value="2">LEO</option>
                     <option value="3">POLAR</option>
                 </select>
-                <input class="pb-block" type="date" title="DESIRED ORBIT">
-                <input class="pb-block" type="number" v-model="mass">
-                <input class="pb-block" type="text" v-bind:value="price" readonly="readonly">
+                <input class="col-lg-2 col-sm-10 pb-block" type="date" title="DESIRED ORBIT">
+                <input class="col-lg-2 col-sm-10 pb-block" type="number" v-model="mass">
+                <input class="col-lg-2 col-sm-10 pb-block" type="text" v-bind:value="price" readonly="readonly">
             </div>
             <div class="button-bar">
                 <button v-on:click="calculate">Calculate</button>
