@@ -26,8 +26,10 @@ Vue.component('navigation', {
                 {item: 'falcan heavy', link: 'falconheavy.html'},
                 {item: 'dragon', link: 'dragon.html'},
                 {item: 'starship', link: 'starship.html'},
+                {item: 'rideshare', link: 'rideshare.html'},
                 {item: 'moon', link: 'moon.html'},
-                {item: 'mars', link: 'mars.html'}
+                {item: 'mars', link: 'mars.html'},
+                {item: 'find your future', link: 'fyf.html'}
             ]
         }
     },
