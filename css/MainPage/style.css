@@ -55,10 +55,37 @@ body {
 #in_main_div1{
     animation: main_div_animate 4s;
 }
+hr{
+    border-color: black;
+}
+#end{
+    background-image: url(image/index/blackSky.jfif);
+    padding: auto;
+    width: 100%;
+}
+.list{
+    display: flex;
+    justify-content: center;
+}
+textarea{
+    width: 100%;
+}
+#ul_ol{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    font-size: 1.5vw;
+    color: white;
+}
+#tr{
+    color: white;
+    text-align: center;
+}
 #div1{
     animation: div1_animate 4s;
     background-image: url(../../image/index/launch.webp);
-    background-color: hsl(0, 0, 0);
+    background-color: hsla(0, 0, 0, 1);
     background-position-x: 70%;
 }
 #div2{
@@ -75,7 +102,7 @@ body {
     background-position-x:  70%;
 }
 .text{
-    color: #ffffff;
+    color: rgba(255, 255, 255, 1);
     font-family: 'D-DIN-Bold',Arial,Verdana,sans-serif;
 }
 .in_main{
