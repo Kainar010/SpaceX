@@ -26,11 +26,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .pb-block{
     height: 100%;
-    width: 20%;
     font-size: larger;
     background-color: rgba(20, 20, 20, 1);
     color: white;
@@ -50,5 +50,20 @@
     width: 25%;
     background-color: rgba(20, 20, 20, 1);
     color: white;
+}
+
+@media screen and (max-width:768px){
+    .main-content {
+        height: 100vh;
+    }
+
+    .price-bar {
+        height: 20%;
+        justify-content: center;
+    }
+
+    .pb-block {
+        height: 20%;
+    }
 }
 
