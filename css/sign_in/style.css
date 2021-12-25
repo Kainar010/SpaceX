@@ -55,7 +55,7 @@ input{
     background: linear-gradient(to left, black 50%, white 50% ) right;
     background-size: 200%;  
     color: white;
-    background-color: black;
+    background-color: hsl(0,0,100);
     display: flex;
     justify-content: center;
     width: 342px;
