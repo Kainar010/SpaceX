@@ -222,7 +222,7 @@ header {
 
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1210px) {
     .items {
         display: none;
     }
@@ -230,10 +230,14 @@ header {
     .sign-up {
         display: none;
     }
-}
 
-@media (min-width: 1024px) {
-    .menu-btn span {
-        z-index: -5;
+    .wrapper {
+        display: inline;
+        width: 210px;
+    }
+
+    .logo {
+        margin: 0;
+        width: 210px;
     }
 }
