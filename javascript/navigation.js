@@ -14,6 +14,20 @@ Vue.component('navigation', {
                         <a href="sign_in.html" class="button_sign-up capital hover">sign up</a>
                     </div>
                 </div>
+                <header>
+                <div class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                </header>
+
+                <div class="menu">
+                    <nav>
+                        <li><a v-for="nav in navs" v-bind:href="nav.link" class="item-text capital">{{ nav.item }}</a></li>
+                        <li><a href="sign_in.html" class="item-text capital">sign up</a></li>
+                    </nav>
+                </div>
             </div>
             
         </div>         
@@ -57,4 +71,12 @@ window.addEventListener('scroll', ()=>{
     }
 
     prevScrollpos = currentScrollPos;
+})
+
+let menuBtn = document.querySelector('.menu-btn');
+let menu = document.querySelector('.menu');
+
+menuBtn.addEventListener('click', function(){
+	menuBtn.classList.toggle('active');
+	menu.classList.toggle('active');
 })
