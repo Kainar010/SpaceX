@@ -5,8 +5,8 @@
         <link rel="stylesheet" href="css/navigation.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/MainPage/style.css">
-        <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+        <script src="https://cdn.tailwiindcss.com"></script>
+        <link rel="stylesheet" href="https://maxcdn.boootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body onscroll="check()" style="background-color: black;">
@@ -77,6 +77,43 @@
                 <button type="button" class="btn btn-default" style="height: 50px; width: 130px;">LEARN MORE</button>
             </div>
         </div>
+        <div id="end" class="font-medium text-left">
+            <div id="ul_ol">
+                <div class="list">
+                    <ol start="1">
+                        Order of Planets in Solar System
+                        <br>
+                        <br>
+                        <li>Mercury</li>
+                        <li>Venus</li>
+                        <li>Earth</li>
+                        <li>Mars</li>
+                        <li>Jupiter</li>
+                        <li>Saturn</li>
+                        <li>Uranus</li>
+                        <li>Neptune</li>
+                    </ol>
+                </div>
+                <div class="list">
+                    <ul>
+                        SpaceX Rockets
+                        <br>
+                        <br>
+                        <li>Falcon 9</li>
+                        <li>Falcon 1</li>
+                        <li>Ariane 5</li>
+                        <li>Atlas V</li>
+                        <li>Ariane</li>
+                        <li>Saturn V</li>
+                        <li>Delta IV</li>
+                        <li>Space Launch System</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div id="tr">Write about the concept of space</div>
+            <textarea name="comment" id="c" cols="30" rows="5"></textarea>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
         <script src="javascript/navigation.js"></script>
         <script>
@@ -90,7 +127,7 @@
                     const element_top_position = elements[i].offsetTop;
                     const element_bottom_position = element_top_position + element_height;
                     if(element_top_position <= window_bottom_position && element_bottom_position >= window_top_position){
-                        elements[i].style.animation ="main_div_animate 4s "
+                        elements[i].style.animation ="main_div_animate 2s "
                     }
                 }
             }
